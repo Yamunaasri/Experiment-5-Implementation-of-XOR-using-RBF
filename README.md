@@ -4,7 +4,6 @@
   To classify the Binary input patterns of XOR data  by implementing Radial Basis Function Neural Networks.
   
 ## EQUIPMENTS REQUIRED:
-
 Hardware – PCs
 Anaconda – Python 3.7 Installation / Google Colab /Jupiter Notebook
 
@@ -31,7 +30,6 @@ The RBF of hidden neuron as gaussian function
 
 
 ## ALGORIHM:
-
 Step 1 : Initialize the input patterns for XOR Gate.
 Step 2: Initialize the desired output of the XOR Gate.
 Step 3: Define the function for RBF and function for prediction.
@@ -63,7 +61,8 @@ plt.xlabel("X1")
 plt.ylabel("X2")
 plt.title("Linearly Inseparable")
 plt.legend()
-
+```
+```
 # centers
 mu1 = np.array([0, 1])
 mu2 = np.array([1, 0])
@@ -85,7 +84,8 @@ W = np.linalg.inv(A.T.dot(A)).dot(A.T).dot(ys)
 print(np.round(A.dot(W)))
 print(ys)
 print("Weights:",W)
-
+```
+```
 plt.figure(figsize=(13, 5))
 plt.subplot(1, 2, 2)
 plt.scatter(from_1[0], from_2[0], label="Class_0")
@@ -104,7 +104,6 @@ print(f"Input:{np.array([0, 1])}, Predicted: {predict_matrix(np.array([0, 1]), W
 print(f"Input:{np.array([1, 0])}, Predicted: {predict_matrix(np.array([1, 0]), W)}")
 print(f"Input:{np.array([1, 1])}, Predicted: {predict_matrix(np.array([1, 1]), W)}")
 ```
-
 ## OUTPUT :
 ### DATA AND WEIGHTS
 ![image](https://github.com/Yamunaasri/Experiment-5-Implementation-of-XOR-using-RBF/assets/115707860/36688edc-0157-475e-9664-e65e8de8b20c)
